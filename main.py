@@ -3,6 +3,10 @@ import random
 
 artworks = []
 
+
+with open('artworks.csv', 'a') as csvfile:
+    print("Main File Intialized")
+
 with open('artworks.csv', 'r') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -17,6 +21,9 @@ with open('artworks.csv', 'r') as csvfile:
         artworks.append(artwork)
 
 artists = []
+
+with open('artists.csv', 'a') as csvfile:
+    print("Artists file intialized")
 
 with open('artists.csv', 'r') as csvfile:
     reader = csv.DictReader(csvfile)
